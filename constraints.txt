@@ -1,0 +1,4 @@
+# Pin the versions verified in the integrated `pp-route` environment. The installed cluster wheels
+# carry the +cu130 local version while pip records these public versions.
+torch==2.13.0
+torchvision==0.28.0

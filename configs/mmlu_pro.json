@@ -1,0 +1,29 @@
+{
+  "name": "mmlu_pro",
+  "task_type": "consistency",
+  "model_selection_type": "generative",
+  "sft_rows": 5233,
+  "development_rows": 3000,
+  "predictor_fit_rows": 2550,
+  "predictor_selection_rows": 450,
+  "test_rows": 3032,
+  "max_steps": 1200,
+  "steps": [
+    300,
+    600,
+    900,
+    1200
+  ],
+  "sft_max_length": 6144,
+  "predictor_max_length": 16384,
+  "num_fewshot": 5,
+  "fewshot_random_seed": 1234,
+  "max_new_tokens": 2048,
+  "trace_path": "data/mmlu_pro_teacher_concise/traces.jsonl",
+  "completion_source": "teacher",
+  "completion_only": true,
+  "conf_max_model_len": 6144,
+  "development_fingerprint_sha256": "5559d75ea88545b64ff4bc333f7ee05f07dcb13b7acc8d827be1971161a93660",
+  "test_fingerprint_sha256": "f9d5b5d0f4826a703d5e0aff0f73a5f0d53a05601639288082501350fac6edac",
+  "trace_sha256": "871c298db8de8d7c0f23ce76d36628327a4855204b4f6456eb6a8f22f96a5ff2"
+}

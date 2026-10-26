@@ -1,0 +1,2 @@
+data/teacher_traces/gsm8k.jsonl.gz filter=lfs diff=lfs merge=lfs -text
+data/teacher_traces/mmlu_pro.jsonl.gz filter=lfs diff=lfs merge=lfs -text

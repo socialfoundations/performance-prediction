@@ -1,0 +1,40 @@
+# Install with: python -m pip install -r requirements.txt -c constraints.txt
+#
+# transformers must be 5.x: the Qwen3.5 models declare architectures that 4.x cannot load.
+# The floor is >=5.5.3, which is also what vllm requires; 5.14.1 is the version verified here.
+#
+# The integrated environment covers training, evaluation, predictors, and vLLM generation. vLLM pins
+# torch 2.13.0; the verified build is 2.13.0+cu130.
+#
+# Install with torch pinned so a resolver cannot quietly upgrade it:
+#   pip install -r requirements.txt -c constraints.txt
+
+zarth-utils==1.4.1
+huggingface_hub>=0.34  # provides the `hf` CLI used for login and downloads
+numpy
+scikit-learn        # roc_auc_score for the generative predictor
+scipy               # leakage-safe two-parameter calibration of predictor anchors
+joblib              # *_scores.jbl I/O
+torch==2.13.0
+transformers==5.14.1
+# vLLM pins FlashInfer post3; conf_sample disables only its unused Python<3.12 comm import.
+vllm==0.27.1         # sampling-consistency generation; uses the native torch sampler
+peft==0.20.0        # LoRA
+trl==1.9.2          # SFTTrainer (finetune_model.py); note it now defaults bf16=True
+tensorboard==2.20.0 # SFTTrainer logging backend
+# lm_eval: 0.4.12 is the latest STABLE and must stay. 0.5.x is not a version bump -- it emits one
+# MC request per document instead of one per choice (render_options refuses it, n=1), so f_Z and
+# the option probabilities would have to be re-derived. It also moves multiple_input ->
+# config.multiple_inputs. Migrate deliberately, with verification.
+lm-eval[hf]==0.4.12 # task datasets + evaluation (imported as lm_eval)
+datasets==5.0.1     # >=4.7.0 required by trl
+accelerate==1.14.0
+jinja2              # prompt templating in tasks.py
+pytest              # tests/
+
+# lm_eval extras for the generative benchmarks (GSM8K answer checking)
+math_verify
+antlr4-python3-runtime==4.11
+langdetect
+immutabledict
+sympy

@@ -1,0 +1,34 @@
+{
+  "MODEL_SEEDS": [
+    0,
+    1,
+    2
+  ],
+  "PREDICTOR_LORA_R": 16,
+  "PREDICTOR_LEARNING_RATE": 0.0001,
+  "PREDICTOR_EPOCHS": 3,
+  "PREDICTOR_EFFECTIVE_BATCH": 16,
+  "PREDICTOR_SEEDS": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "BACKBONES": [
+    {
+      "name": "Qwen/Qwen3-Embedding-4B",
+      "revision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+      "tag": "e4b",
+      "batch_size": 16,
+      "mc_micro_batch_size": 8,
+      "consistency_micro_batch_size": 1
+    }
+  ],
+  "CONSISTENCY_ESTIMATOR": "bucket-v1"
+}

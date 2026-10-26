@@ -1,0 +1,28 @@
+{
+  "name": "winogrande",
+  "task_type": "mc",
+  "model_selection_type": "mc",
+  "sft_rows": 32313,
+  "development_rows": 8080,
+  "predictor_fit_rows": 6868,
+  "predictor_selection_rows": 1212,
+  "test_rows": 1267,
+  "max_steps": 2000,
+  "steps": [
+    500,
+    1000,
+    1500,
+    2000
+  ],
+  "sft_max_length": 256,
+  "predictor_max_length": 384,
+  "num_fewshot": 5,
+  "fewshot_random_seed": 1234,
+  "max_new_tokens": -1,
+  "trace_path": "",
+  "completion_source": "",
+  "completion_only": true,
+  "conf_max_model_len": 0,
+  "development_fingerprint_sha256": "41119fa2545a25c553392c8cdf5c65fa3dcdaa80225d2f5e3584f2bc2f34b96c",
+  "test_fingerprint_sha256": "cb2c5d3a35f046078ef23a2bfbd53b6ba22c8e53be87565f4665d7979df3006a"
+}

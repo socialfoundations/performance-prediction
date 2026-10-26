@@ -1,0 +1,29 @@
+{
+  "name": "gsm8k",
+  "task_type": "consistency",
+  "model_selection_type": "generative",
+  "sft_rows": 5088,
+  "development_rows": 2241,
+  "predictor_fit_rows": 1904,
+  "predictor_selection_rows": 337,
+  "test_rows": 1319,
+  "max_steps": 1500,
+  "steps": [
+    375,
+    750,
+    1125,
+    1500
+  ],
+  "sft_max_length": 4096,
+  "predictor_max_length": 16384,
+  "num_fewshot": 5,
+  "fewshot_random_seed": 1234,
+  "max_new_tokens": 2048,
+  "trace_path": "data/gsm8k_teacher/traces.jsonl",
+  "completion_source": "teacher",
+  "completion_only": true,
+  "conf_max_model_len": 6144,
+  "development_fingerprint_sha256": "a1a496aea99597da356ad1aa4f1cb002d0d016361187dcb06987fa1774a9e169",
+  "test_fingerprint_sha256": "82616949389bef00c2ff518ec26917a70fc0b2bbaf06b91413245eb3e454fdf6",
+  "trace_sha256": "ecf4ba157307fde7c02fd22c57e4ef75b018ae815ccae48e8e23403ea8611bb3"
+}

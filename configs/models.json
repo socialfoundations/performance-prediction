@@ -1,0 +1,133 @@
+[
+  {
+    "name": "Qwen/Qwen3.5-9B-Base",
+    "organization": "Qwen",
+    "model": "Qwen3.5-9B-Base",
+    "revision": "68c46c4b3498877f3ef123c856ecfde50c39f404",
+    "prompt_format": "raw",
+    "eval_batch_size": 8
+  },
+  {
+    "name": "meta-llama/Llama-3.1-8B",
+    "organization": "meta-llama",
+    "model": "Llama-3.1-8B",
+    "revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+    "prompt_format": "raw",
+    "eval_batch_size": 16
+  },
+  {
+    "name": "swiss-ai/Apertus-8B-2509",
+    "organization": "swiss-ai",
+    "model": "Apertus-8B-2509",
+    "revision": "3162c99675aa588097cecd4a24b9aa1f712af477",
+    "prompt_format": "raw",
+    "eval_batch_size": 16
+  },
+  {
+    "name": "allenai/Olmo-3-1025-7B",
+    "organization": "allenai",
+    "model": "Olmo-3-1025-7B",
+    "revision": "a81bae42db3975be1671e27b9c9a56da1a9f980f",
+    "prompt_format": "raw",
+    "eval_batch_size": 8
+  },
+  {
+    "name": "tiiuae/Falcon3-7B-Base",
+    "organization": "tiiuae",
+    "model": "Falcon3-7B-Base",
+    "revision": "bf3d7ed586cb22a921520e2d681a9d3d7642cde8",
+    "prompt_format": "raw",
+    "eval_batch_size": 16
+  },
+  {
+    "name": "mistralai/Mistral-7B-v0.3",
+    "organization": "mistralai",
+    "model": "Mistral-7B-v0.3",
+    "revision": "caa1feb0e54d415e2df31207e5f4e273e33509b1",
+    "prompt_format": "raw",
+    "eval_batch_size": 16
+  },
+  {
+    "name": "nvidia/Mistral-NeMo-Minitron-8B-Base",
+    "organization": "nvidia",
+    "model": "Mistral-NeMo-Minitron-8B-Base",
+    "revision": "cc94637b669b62c4829b1e0c3b9074fecd883b74",
+    "prompt_format": "raw",
+    "eval_batch_size": 16
+  },
+  {
+    "name": "google/gemma-3-12b-pt",
+    "organization": "google",
+    "model": "gemma-3-12b-pt",
+    "revision": "295efb63d01a7017928f273a94ebb86105c9526f",
+    "prompt_format": "raw",
+    "eval_batch_size": 4
+  },
+  {
+    "name": "Qwen/Qwen3.5-9B",
+    "organization": "Qwen",
+    "model": "Qwen3.5-9B",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "prompt_format": "chat",
+    "eval_batch_size": 8
+  },
+  {
+    "name": "meta-llama/Llama-3.1-8B-Instruct",
+    "organization": "meta-llama",
+    "model": "Llama-3.1-8B-Instruct",
+    "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "prompt_format": "chat",
+    "eval_batch_size": 16
+  },
+  {
+    "name": "swiss-ai/Apertus-8B-Instruct-2509",
+    "organization": "swiss-ai",
+    "model": "Apertus-8B-Instruct-2509",
+    "revision": "b946d40447b2b597999b9c86d44bee0b452c919f",
+    "prompt_format": "chat",
+    "eval_batch_size": 16
+  },
+  {
+    "name": "allenai/Olmo-3-7B-Instruct",
+    "organization": "allenai",
+    "model": "Olmo-3-7B-Instruct",
+    "revision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+    "prompt_format": "chat",
+    "eval_batch_size": 8
+  },
+  {
+    "name": "tiiuae/Falcon3-7B-Instruct",
+    "organization": "tiiuae",
+    "model": "Falcon3-7B-Instruct",
+    "revision": "1e57a0ecd176c7c139f289c60a74e57f887c3dfb",
+    "prompt_format": "chat",
+    "eval_batch_size": 16
+  },
+  {
+    "name": "mistralai/Mistral-7B-Instruct-v0.3",
+    "organization": "mistralai",
+    "model": "Mistral-7B-Instruct-v0.3",
+    "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+    "prompt_format": "chat",
+    "eval_batch_size": 16
+  },
+  {
+    "name": "nvidia/Mistral-NeMo-Minitron-8B-Instruct",
+    "organization": "nvidia",
+    "model": "Mistral-NeMo-Minitron-8B-Instruct",
+    "revision": "64261e01bfabab557842e5803a7ea96cc09489a5",
+    "prompt_format": "chat",
+    "eval_batch_size": 16,
+    "extra_until": [
+      "<extra_id_1>"
+    ]
+  },
+  {
+    "name": "google/gemma-3-12b-it",
+    "organization": "google",
+    "model": "gemma-3-12b-it",
+    "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+    "prompt_format": "chat",
+    "eval_batch_size": 4
+  }
+]

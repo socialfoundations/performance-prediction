@@ -1,0 +1,28 @@
+{
+  "name": "commonsense_qa",
+  "task_type": "mc",
+  "model_selection_type": "mc",
+  "sft_rows": 6394,
+  "development_rows": 3342,
+  "predictor_fit_rows": 2840,
+  "predictor_selection_rows": 502,
+  "test_rows": 1221,
+  "max_steps": 1200,
+  "steps": [
+    300,
+    600,
+    900,
+    1200
+  ],
+  "sft_max_length": 512,
+  "predictor_max_length": 384,
+  "num_fewshot": 5,
+  "fewshot_random_seed": 1234,
+  "max_new_tokens": -1,
+  "trace_path": "",
+  "completion_source": "",
+  "completion_only": true,
+  "conf_max_model_len": 0,
+  "development_fingerprint_sha256": "6e507e499ac42434c0ca2a8007bd1fc791c8f23f16679f7a604e2d446e0a9aad",
+  "test_fingerprint_sha256": "e7bbb9ebed143ad52f57d636d12041d7a354033f9f821ae28e69858e1870a56a"
+}
